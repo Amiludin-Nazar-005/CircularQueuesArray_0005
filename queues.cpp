@@ -36,24 +36,35 @@ public:
         {
             // jika rear berada di posisi terakhir array kembali ke awal array
             if (rear == max - 1)
-            rear =0;
+                rear = 0;
             else
-            rear = rear +1;
+                rear = rear + 1;
         }
         queue_array[rear] = num;
     }
 
-    void remove(){
-        //cek apakah antrian kosong
-        if (front == -1){
+    void remove()
+    {
+        // cek apakah antrian kosong
+        if (front == -1)
+        {
             cout << "queue underFlow\n";
             return;
         }
-        cout << "\nThe element deleted from the queue is: " << queue_array[front]<<"\n";
+        cout << "\nThe element deleted from the queue is: " << queue_array[front] << "\n";
         // cek jika antian hanya memiliki satu elemnt
-        if (front == rear){
-            front =-1;
-            rear =-1;
+        if (front == rear)
+        {
+            front = -1;
+            rear = -1;
+        }
+        else
+        {
+            // jika elemen yang di hapus berada di posisi terakhir array, kembali ke awal array
+            if (front == max - 1)
+                front = 0;
+            else
+                front = front + 1;
         }
     }
 };
