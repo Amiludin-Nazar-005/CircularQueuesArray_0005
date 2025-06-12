@@ -67,4 +67,16 @@ public:
                 front = front + 1;
         }
     }
+
+    void display(){
+        int front_position = front;
+        int rear_position = rear;
+        //cek apakah antian kososng
+        if (front == -1){
+            cout << "queue is empty\n";
+            return;
+        }
+        cout << "\nElements is teh queue are...\n";
+        
+    }
 };
