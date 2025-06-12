@@ -85,6 +85,12 @@ public:
             }
             cout << endl;
         }
-
+        else {
+            //jika fornt_position > rear_position ,iterasi dari front hingga ahir array
+            while (front_position <= rear_position){
+                cout << queue_array[front_position]<< "   ";
+                front_position++;
+            }
+        }
     }
 };
