@@ -68,35 +68,65 @@ public:
         }
     }
 
-    void display(){
+    void display()
+    {
         int front_position = front;
         int rear_position = rear;
-        //cek apakah antian kososng
-        if (front == -1){
+        // cek apakah antian kososng
+        if (front == -1)
+        {
             cout << "queue is empty\n";
             return;
         }
         cout << "\nElements is teh queue are...\n";
-        //jika fornt_position <= rear position, iterasi dari front hingga rear
-        if (front_position <= rear_position){
-            while (front_position <= rear_position){
-                cout << queue_array[front_position]<< "   ";
+        // jika fornt_position <= rear position, iterasi dari front hingga rear
+        if (front_position <= rear_position)
+        {
+            while (front_position <= rear_position)
+            {
+                cout << queue_array[front_position] << "   ";
                 front_position++;
             }
             cout << endl;
         }
-        else {
-            //jika fornt_position > rear_position ,iterasi dari front hingga ahir array
-            while (front_position <= rear_position){
-                cout << queue_array[front_position]<< "   ";
+        else
+        {
+            // jika fornt_position > rear_position ,iterasi dari front hingga ahir array
+            while (front_position <= rear_position)
+            {
+                cout << queue_array[front_position] << "   ";
                 front_position++;
             }
-            front_position =0;
-            while (front_position <= rear_position){
-                cout << queue_array[front_position]<< "   ";
+            front_position = 0;
+            while (front_position <= rear_position)
+            {
+                cout << queue_array[front_position] << "   ";
                 front_position++;
             }
             cout << endl;
         }
     }
 };
+
+int main()
+{
+    queues q;
+    char ch;
+
+    while (true)
+    {
+        try
+        {
+            cout << "menu" << endl;
+            cout <<"1. implement insert operation"<< endl;
+            cout <<"2. implement deleted operation"<< endl;
+            cout <<"3. display value"<< endl;
+            cout <<"4. exit"<< endl;
+            cout <<"enter your choice (1-4): "<<endl;
+            cin >> ch;
+            cout << endl;
+
+      
+        }
+    }
+}
