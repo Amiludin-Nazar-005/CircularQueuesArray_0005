@@ -42,4 +42,13 @@ public:
         }
         queue_array[rear] = num;
     }
+
+    void remove(){
+        //cek apakah antrian kosong
+        if (front == -1){
+            cout << "queue underFlow\n";
+            return;
+        }
+        cout << "\nThe element deleted from the queue is: " << queue_array[front]<<"\n";
+
 };
