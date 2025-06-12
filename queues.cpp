@@ -10,5 +10,11 @@ class queues {
         front =-1;
         rear =-1;
     }
-    
-}
+
+    void insert (){
+        int num;
+        cout << "enter a number: " ;
+        cin >> num;
+        cout << endl;
+    }
+};
